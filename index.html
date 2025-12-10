@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cybersecurity blog by Pranesh R - Exploring the latest in information security, ethical hacking, and cyber defense strategies.">
+    <title>Pranesh R | Cybersecurity Enthusiast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="#">PRANESH<span>R</span></a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                        <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+                        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/yourusername" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-profile">
+                        <img src="profile.jpeg" alt="Pranesh R - Cybersecurity Professional" class="profile-image">
+                    </div>
+                    <div class="hero-text">
+                        <h1 class="hero-title">Hi, I'm <span class="text-gradient">Pranesh R</span></h1>
+                        <h2 class="hero-subtitle">Cybersecurity Student & Ethical Hacker</h2>
+                        <p class="hero-description">Exploring the digital frontier, securing systems, and sharing knowledge about cybersecurity, penetration testing, and ethical hacking.</p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                            <a href="#blog" class="btn btn-secondary">Read My Blog</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="code-animation">
+                        <div class="terminal-window">
+                            <div class="terminal-header">
+                                <span class="terminal-btn red"></span>
+                                <span class="terminal-btn yellow"></span>
+                                <span class="terminal-btn green"></span>
+                                <span class="terminal-title">security@praneshr: ~</span>
+                            </div>
+                            <div class="terminal-body">
+                                <p><span class="prompt">$</span> whoami</p>
+                                <p>pranesh - cybersecurity-enthusiast - bug-hunter</p>
+                                <p><span class="prompt">$</span> <span class="typing">nmap -sV -sC -p- --script vuln</span><span class="cursor">|</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Hello! I'm Pranesh, a passionate cybersecurity student with a keen interest in offensive security, digital forensics, and secure software development. My journey in cybersecurity began when I discovered my passion for understanding how systems work and how they can be secured against modern threats.</p>
+                        <p>Currently pursuing my degree in Cybersecurity, I spend my time researching new attack vectors, participating in CTF competitions, and contributing to open-source security tools.</p>
+                        <div class="skills">
+                            <h3>Technical Skills</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Penetration Testing</span>
+                                <span class="skill-tag">Ethical Hacking</span>
+                                <span class="skill-tag">Network Security</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Linux</span>
+                                <span class="skill-tag">Digital Forensics</span>
+                                <span class="skill-tag">SIEM</span>
+                                <span class="skill-tag">Cloud Security</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-info">
+                    <div class="profile-info">
+                        <h3>Pranesh R</h3>
+                        <p>Cybersecurity Student</p>
+                        <div class="profile-links">
+                            <a href="#" class="profile-link"><i class="fas fa-file-pdf"></i> Download CV</a>
+                            <a href="#contact" class="profile-link"><i class="fas fa-envelope"></i> Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section blog-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Latest Articles</h2>
+                    <p class="section-subtitle">Insights, tutorials, and thoughts on cybersecurity</p>
+                </div>
+                <div class="blog-container" id="blog-posts">
+                    <!-- Blog posts will be dynamically inserted here -->
+                </div>
+                <div class="view-all-container">
+                    <a href="#" class="btn btn-outline">View All Articles <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Security tools and research projects</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Vulnerability Scanner</h3>
+                        <p>Automated vulnerability assessment tool for web applications with detailed reporting capabilities.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Password Manager</h3>
+                        <p>Secure password management solution with end-to-end encryption and cross-platform support.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Network Traffic Analyzer</h3>
+                        <p>Real-time network monitoring tool with anomaly detection and threat identification.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Have questions or want to collaborate? Feel free to reach out!</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email Me</h3>
+                                <p>pranesh@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Connect on LinkedIn</h3>
+                                <p>linkedin.com/in/praneshr</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Check My GitHub</h3>
+                                <p>github.com/praneshr</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Pranesh R</h3>
+                    <p>Cybersecurity enthusiast passionate about securing the digital world, one line of code at a time.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-hackerrank"></i></a>
+                        <a href="#"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get notified about new articles and security updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pranesh R. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#">Terms of Service</a>
+                    <span>|</span>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
