@@ -57,22 +57,16 @@ function createBlogPost(post) {
     const tags = post.tags.map(tag => `<span class="blog-tag">${tag}</span>`).join('');
     
     return `
-        <article class="blog-post fade-in-up" data-category="${post.category.toLowerCase().replace(/\s+/g, '-')}">
-            <div class="blog-image-container">
-                <img src="${post.image}" alt="${post.title}" class="blog-image">
-                <span class="blog-category">${post.category}</span>
+        <article class="blog-card" data-category="${post.category.toLowerCase().replace(/\s+/g, '-')}">
+            <div class="blog-image">
+                <img src="${post.image}" alt="${post.title}">
             </div>
             <div class="blog-content">
-                <div class="blog-meta">
-                    <span class="blog-date"><i class="far fa-calendar-alt"></i> ${post.date}</span>
-                    <span class="read-time"><i class="far fa-clock"></i> ${post.readTime}</span>
-                </div>
-                <h2 class="blog-title"><a href="#" class="blog-title-link">${post.title}</a></h2>
-                <p class="blog-excerpt">${post.excerpt}</p>
-                <div class="blog-tags">${tags}</div>
-                <div class="blog-footer">
-                    <span class="read-time"><i class="far fa-clock"></i> ${post.readTime}</span>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                <h3>${post.title}</h3>
+                <span class="blog-date">${post.date} • ${post.readTime}</span>
+                <div class="blog-excerpt">
+                    <p>${post.excerpt}</p>
+                    <div class="blog-tags">${tags}</div>
                 </div>
             </div>
         </article>
@@ -81,7 +75,8 @@ function createBlogPost(post) {
 
 // Function to display blog posts with filtering
 function displayBlogPosts() {
-    const blogContainer = document.getElementById('blog-posts');
+    // Use the blog grid container that matches our CSS
+    const blogContainer = document.querySelector('.blog-grid') || document.getElementById('blog-posts');
     
     if (blogContainer) {
         // Clear existing content
@@ -120,6 +115,56 @@ function initAnimations() {
 // Initialize the blog when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     displayBlogPosts();
+    
+    // Initialize blog card interactions
+    const blogCards = document.querySelectorAll('.blog-card');
+    let isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints;
+    
+    blogCards.forEach(card => {
+        let isLocked = false;
+        let hoverTimeout;
+        
+        // Click handler for locking/unlocking
+        card.addEventListener('click', function(e) {
+            // Don't toggle if clicking on links
+            if (e.target.tagName === 'A' || e.target.closest('a')) {
+                return;
+            }
+            
+            isLocked = !isLocked;
+            card.classList.toggle('expanded', isLocked);
+            e.stopPropagation();
+        });
+        
+        // Hover handler for non-touch devices
+        if (!isTouchDevice) {
+            card.addEventListener('mouseenter', function() {
+                if (!isLocked) {
+                    hoverTimeout = setTimeout(() => {
+                        card.classList.add('expanded');
+                    }, 300); // Small delay to prevent accidental hovers
+                }
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                clearTimeout(hoverTimeout);
+                if (!isLocked) {
+                    card.classList.remove('expanded');
+                }
+            });
+        }
+    });
+    
+    // Close expanded cards when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.blog-card')) {
+            blogCards.forEach(card => {
+                if (!card.isLocked) {
+                    card.classList.remove('expanded');
+                }
+            });
+        }
+    });
     
     // Mobile menu toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
