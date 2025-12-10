@@ -112,14 +112,78 @@
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Latest Articles</h2>
-                    <p class="section-subtitle">Insights, tutorials, and thoughts on cybersecurity</p>
+                    <p class="section-subtitle">Hover over to read more about each topic</p>
+                </div>
+                <div class="blog-grid">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Zero-Day Vulnerabilities" class="blog-image">
+                        <div class="blog-content">
+                            <h3>Understanding Zero-Day Vulnerabilities</h3>
+                            <p class="blog-date">December 10, 2025</p>
+                            <div class="blog-excerpt">
+                                <p>Zero-day vulnerabilities represent one of the most significant threats in today's cybersecurity landscape. These are security flaws that are unknown to the vendor and for which no patch or fix is available at the time of discovery. The term "zero-day" refers to the fact that developers have zero days to fix the issue once it becomes known, as attackers are already exploiting it in the wild.</p>
+                                <p>The lifecycle of a zero-day vulnerability typically begins when a hacker discovers a security flaw in a piece of software. This could be through various means such as reverse engineering, fuzzing, or even accidental discovery. The attacker then develops an exploit to take advantage of this vulnerability before the software vendor becomes aware of it.</p>
+                                <p>What makes zero-day vulnerabilities particularly dangerous is their stealth nature. Since they're unknown to the vendor, traditional security measures like antivirus software and intrusion detection systems may not recognize the attack. This gives attackers a significant advantage, allowing them to infiltrate systems, steal sensitive data, or cause other types of damage before anyone realizes what's happening.</p>
+                                <p>To protect against zero-day attacks, organizations should implement a multi-layered security approach. This includes keeping all software and systems updated, using advanced threat detection solutions, implementing the principle of least privilege, and conducting regular security audits. User education is also crucial, as many zero-day exploits are delivered through social engineering tactics like phishing emails.</p>
+                                <p>In recent years, the market for zero-day vulnerabilities has grown significantly, with both legitimate security researchers and malicious actors actively searching for these flaws. Some governments and corporations are willing to pay substantial sums for information about zero-day vulnerabilities, either to fix them or to use them for offensive cybersecurity operations.</p>
+                                <p>As technology continues to evolve, the discovery and exploitation of zero-day vulnerabilities are likely to increase. This makes it essential for organizations to remain vigilant and proactive in their cybersecurity efforts, constantly updating their defenses to protect against these invisible threats.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Secure Coding Practices" class="blog-image">
+                        <div class="blog-content">
+                            <h3>Secure Coding Practices in 2025</h3>
+                            <p class="blog-date">December 5, 2025</p>
+                            <div class="blog-excerpt">
+                                <p>In the rapidly evolving landscape of cybersecurity, secure coding practices have become more critical than ever. As we navigate through 2025, developers face increasingly sophisticated threats that require a proactive approach to application security. This comprehensive guide explores the latest secure coding practices that every development team should implement to build robust, resilient software.</p>
+                                <p>One of the fundamental principles of secure coding is input validation. All user input should be treated as untrusted and must be properly validated, sanitized, and encoded before processing. This helps prevent common vulnerabilities such as SQL injection, cross-site scripting (XSS), and command injection attacks. Modern frameworks often provide built-in protection mechanisms, but developers must understand how to implement them correctly.</p>
+                                <p>Authentication and authorization remain critical components of application security. Implementing multi-factor authentication (MFA) has become standard practice, with biometric authentication methods gaining popularity. Role-based access control (RBAC) should be strictly enforced, following the principle of least privilege. Developers must also be aware of the latest OAuth 2.1 and OpenID Connect specifications when implementing authentication flows.</p>
+                                <p>Secure handling of sensitive data is another crucial aspect. This includes proper encryption of data at rest and in transit, secure key management, and secure storage of credentials. The use of hardware security modules (HSMs) and cloud-based key management services has become more prevalent for managing cryptographic keys securely.</p>
+                                <p>Error handling and logging must be implemented with security in mind. While detailed error messages are helpful for debugging, they should never reveal sensitive information in production environments. Logs should be protected from unauthorized access and should not contain sensitive data. Implementing proper rate limiting and request validation can help prevent denial-of-service (DoS) attacks.</p>
+                                <p>As we move forward, the integration of security into the development lifecycle through DevSecOps practices has become essential. Automated security testing, including static application security testing (SAST), dynamic application security testing (DAST), and software composition analysis (SCA), should be integrated into CI/CD pipelines. Regular security training for developers and staying updated with the latest security advisories are also crucial for maintaining secure coding practices in 2025.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Password Security" class="blog-image">
+                        <div class="blog-content">
+                            <h3>Password Security in the Age of AI</h3>
+                            <p class="blog-date">November 28, 2025</p>
+                            <div class="blog-excerpt">
+                                <p>The advent of advanced artificial intelligence has dramatically transformed the landscape of password security, presenting both challenges and opportunities for cybersecurity professionals and everyday users alike. As we navigate through 2025, understanding these changes is crucial for maintaining robust digital security in an increasingly interconnected world.</p>
+                                <p>Modern AI-powered password cracking tools have become frighteningly efficient. These systems can analyze patterns in password creation, learn from data breaches, and make intelligent guesses at an unprecedented scale and speed. They can process billions of password combinations per second, making short work of even moderately complex passwords. This has rendered traditional password creation strategies, such as simple word substitutions or character replacements, virtually obsolete.</p>
+                                <p>In response to these challenges, the concept of password strength has evolved. Length has become the most critical factor in password security. A passphrase consisting of multiple random words is now considered more secure than a shorter, more complex password. For example, "correct horse battery staple" is more secure than "P@ssw0rd!" despite being easier to remember. This approach, known as the "diceware" method, has gained widespread adoption among security experts.</p>
+                                <p>Password managers have become an essential tool in the modern security toolkit. These applications generate and store complex, unique passwords for each online account, requiring users to remember only a single master password. The best password managers now incorporate AI to detect potential security risks, such as password reuse or exposure in data breaches, and can automatically update compromised credentials.</p>
+                                <p>Multi-factor authentication (MFA) has transitioned from a recommended practice to an absolute necessity. The most secure implementations now use hardware security keys or biometric authentication as the second factor, rather than SMS-based one-time passwords, which are vulnerable to SIM-swapping attacks. Passwordless authentication methods, such as WebAuthn, are also gaining traction, allowing users to log in using biometrics or security keys without entering a password at all.</p>
+                                <p>Looking ahead, the future of authentication appears to be moving beyond traditional passwords entirely. Behavioral biometrics, which analyze patterns in how users interact with their devices, and continuous authentication systems that constantly verify user identity, are emerging as promising alternatives. However, until these technologies become mainstream, understanding and implementing strong password practices remains essential for protecting our digital lives in the age of AI.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Ethical Hacking" class="blog-image">
+                        <div class="blog-content">
+                            <h3>Ethical Hacking: Getting Started</h3>
+                            <p class="blog-date">November 20, 2025</p>
+                            <div class="blog-excerpt">
+                                <p>Ethical hacking, also known as penetration testing or white-hat hacking, has emerged as a critical component of modern cybersecurity. As organizations increasingly recognize the importance of proactive security measures, the demand for skilled ethical hackers continues to soar. This comprehensive guide provides a roadmap for beginners looking to embark on a career in this exciting and rewarding field.</p>
+                                <p>The journey to becoming an ethical hacker begins with building a strong foundation in computer networking. Understanding how data flows across networks, the TCP/IP protocol suite, and common network devices is essential. Aspiring ethical hackers should familiarize themselves with concepts like IP addressing, subnetting, DNS, DHCP, and various networking protocols. Hands-on experience with network configuration and troubleshooting is invaluable, as it provides practical insights into how systems communicate and where vulnerabilities might exist.</p>
+                                <p>Proficiency in operating systems, particularly Linux, is another fundamental requirement. Most security tools and penetration testing frameworks run on Linux, and many servers worldwide use Linux-based systems. Learning command-line operations, shell scripting, and system administration tasks will provide a solid base for more advanced security testing. Virtualization technologies like VMware or VirtualBox are also crucial for setting up safe testing environments without risking damage to production systems.</p>
+                                <p>Programming knowledge significantly enhances an ethical hacker's capabilities. While it's possible to use pre-built tools, understanding how to write and modify scripts allows for more sophisticated testing. Python is particularly valuable due to its extensive libraries for security testing and automation. Other useful languages include Bash for scripting, SQL for database security testing, and JavaScript for web application security. The ability to read and understand code in multiple languages is also beneficial when analyzing potential vulnerabilities in various applications.</p>
+                                <p>Formal education and certifications can provide structure to the learning process and validate skills to potential employers. While a degree in computer science, cybersecurity, or a related field is beneficial, it's not always necessary. Certifications like CompTIA Security+, Certified Ethical Hacker (CEH), Offensive Security Certified Professional (OSCP), and GIAC Security Essentials (GSEC) are highly regarded in the industry. These certifications typically require passing rigorous exams that test both theoretical knowledge and practical skills.</p>
+                                <p>Practical experience is perhaps the most critical component of becoming a successful ethical hacker. Setting up a home lab using virtual machines allows for safe experimentation with various operating systems, tools, and attack techniques. Participating in Capture The Flag (CTF) competitions and platforms like Hack The Box or TryHackMe provides hands-on experience in a controlled environment. As skills develop, contributing to open-source security projects or writing detailed vulnerability reports for bug bounty programs can help build a portfolio that demonstrates expertise to potential employers.</p>
+                                <p>Ethical hacking is not just about technical skills; it requires a particular mindset. Successful ethical hackers are naturally curious, persistent problem-solvers who enjoy breaking down complex systems to understand how they work. They maintain a strong ethical compass, understanding that their skills must be used responsibly and legally. As technology continues to evolve, ethical hackers must commit to continuous learning to stay ahead of emerging threats and maintain their effectiveness in an ever-changing digital landscape.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="blog-container" id="blog-posts">
                     <!-- Blog posts will be dynamically inserted here -->
                 </div>
-                <div class="view-all-container">
-                    <a href="#" class="btn btn-outline">View All Articles <i class="fas fa-arrow-right"></i></a>
-                </div>
+                
             </div>
         </section>
 
@@ -272,6 +336,34 @@
     </button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const blogCards = document.querySelectorAll('.blog-card');
+            
+            blogCards.forEach(card => {
+                const image = card.querySelector('.blog-image');
+                
+                image.addEventListener('click', function(e) {
+                    // Close any other open cards
+                    blogCards.forEach(otherCard => {
+                        if (otherCard !== card && otherCard.classList.contains('expanded')) {
+                            otherCard.classList.remove('expanded');
+                        }
+                    });
+                    
+                    // Toggle the clicked card
+                    card.classList.toggle('expanded');
+                    
+                    // Scroll the expanded card into view smoothly
+                    if (card.classList.contains('expanded')) {
+                        setTimeout(() => {
+                            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
